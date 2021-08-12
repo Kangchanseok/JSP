@@ -8,5 +8,27 @@
 	<h3>HELLO HTML</h3>
 	<p> 이것은 찬석이가 만든 첫 번째 HTML입니다</p>
 	
+	<h4>GET 전송</h4>
+	<!-- 
+	- url로 데이터 전송
+	- 파라미터는 ? 뒤에 파라미터명=파라미터값 으로 전송
+	- 여러개의 파라미터는 & 로 연결
+	 -->
+	 <p>
+	 <a href = "hs?name=servlet">HelloServlet 요청</a>
+	 </p>
+	 
+	 <h4>Post 전송</h4>
+	 <!-- 사용자 입력 데이터 전송을 위한 form tag -->
+	 <form action="hs" method = "POST">
+	 <label for = "Last_name">성</label>
+	 <input type="text" name = "Last_name" id="last_name" /><br / >
+	 <label for = "first_name">이름</label>
+	 <input type = "text" name ="first_name" id="first_name" /><br />
+	 
+	 <input type = "submit" value = "전송" />
+	 
+	 
+	 </form>
 </body>
 </html>
